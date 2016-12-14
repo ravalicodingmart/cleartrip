@@ -1,0 +1,401 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  #search
+  {
+    text-align: right;
+  }
+
+  @media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+      padding: 0;
+      max-height: none;
+
+    }
+    .navbar-collapse{
+      height:500px;
+    }
+    .sidebar-nav .navbar ul {
+      float: none;
+      display: block;
+    }
+    .sidebar-nav .navbar li {
+      float: none;
+      display: block;
+      border-right:1px solid 	#DCDCDC;
+      border-bottom:1px solid 	#DCDCDC;
+    }
+    .sidebar-nav .navbar li a {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .glyphicon glyphicon-menu-right {
+      padding-right: 12px;
+    }
+
+}
+
+.act{
+  border-right:1px solid 	#DCDCDC;
+  border-bottom:1px solid 	#DCDCDC;
+    border-left:1px solid 	#DCDCDC;
+    margin-left: 10px;
+    background-color: #fff;
+
+}
+
+.row {
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+p1{
+  font-family: Helvetica,Arial,sans-serif;
+  letter-spacing: normal;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 4px;
+  color: #000;
+}
+p2{
+  font-family: Helvetica,Arial,sans-serif;
+  letter-spacing: normal;
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+  margin-top: 4px;
+  color: #000;
+}
+
+
+
+.crr, .ind, .tps{
+  float: left;
+    border-right:1px solid #DCDCDC;
+}
+
+.container-fluid
+{
+  background-color:#FAFAFA;
+}
+
+
+  </style>
+</head>
+
+
+<body>
+  <!--navigation bar-->
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+  <div class="row">
+<!--cleartrip image-->
+    <div class="col-sm-3">
+      <div class="navbar-header">
+      <div class="img-rounded">
+        <a href="/home/codingmart/Documents/logo_1.png">
+          <img src="/home/codingmart/Documents/logo_1.png" style="width:50%; height:20%;"></a>
+      </div>
+      </div>
+    </div>
+  <!--text-->
+  <div class="col-sm-5">
+<div class="collapse navbar-collapse" id="mainNav"><a href="#" data-toggle="tooltip" title="Hooray!">
+  Tell us what you think </a> of cleartrip experience
+</div>
+</div>
+<!--currency, your trips dropdown-->
+<div class="col-sm-4">
+  <ul class="nav navbar-nav navbar-right">
+          <li><a class="crr" href="#">Currency INR<i class="fa fa-inr"></i><span class="caret"></a></li>
+          <li><a class="ind" href="#">1<span class="caret"></span> </a>
+          </li>
+          <li><a class="tps" href="#"><span class="glyphicon glyphicon-user">Your Trips<span class="caret"></a></li>
+      </ul>
+  </div>
+
+</div><!--close row-->
+</div><!--close container-->
+
+  </nav><!--close navigation bar-->
+
+
+
+
+
+<!--next container main page-->
+  <div class"container-fluid">
+
+    <div class="row">
+      <!--list of options u can select vertical navigation-->
+      <div class="col-sm-3 offset-0">
+        <div class="sidebar-nav">
+    <div class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="visible-xs navbar-brand">Sidebar menu</span>
+      </div>
+      <div class="navbar-collapse collapse sidebar-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="act"><a href="#">Flights<span class="glyphicon glyphicon-menu-right "></span></a></li>
+          <li><a class="ht" href="#">Hotels<span class="glyphicon glyphicon-menu-right "></span></a></li>
+          <li><a class="ll" href="#">Local<span class="glyphicon glyphicon-menu-right "></span></a></li>
+          <li><a class="fh"href="#">Flight+Hotel<span class="glyphicon glyphicon-menu-right "></span></a></li>
+          <li><a class="tr" href="#">Trains<span class="glyphicon glyphicon-menu-right "></span></a></li>
+          <li><a class="mv" href=""href="#">Mobile<span class="glyphicon glyphicon-menu-right "></span></a></li>
+          <li><a class="mt" href="#">Manage trips<span class="glyphicon glyphicon-menu-right "></span></a></li>
+
+        </ul>
+      </div>
+
+  </div>
+</div>
+</div>
+
+<!--closing vertical navigation-->
+
+
+<!--main form to search flights-->
+      <div class="col-sm-6">
+        <h1><b>Search flights<b></h1>
+          <h3><p class="text-muted">Fly anywhere. Fly everwhere</p></h3>
+</br>
+  <!--radio buttons select your convenient option -->
+<h5>
+   <label class="radio-inline"><input type="radio" name="optradio"><b>One way</b></label>
+   <label class="radio-inline"><input type="radio" name="optradio"><b>Round trip</b></label>
+   <label class="radio-inline"><input type="radio" name="optradio"><b>Multi-city</b></label>
+   <label class="radio-inline"><input type="radio" name="optradio"><b>flight + hotel</b></label>
+</h5>
+</br>
+
+
+<!--type from and to address-->
+  <form class="form-inline">
+      <div class="form-group">
+        <div class="col-xs-4">
+        <label for="To">To</label></br>
+        <input type="To" class="form-control" id="To" placeholder="Any worldwide city or airport">
+      </div>
+    </div>
+      <div class="form-group">
+        <div class="col-xs-4">
+        <label for="From">From</label></br>
+        <input type="From" class="form-control" id="from" placeholder="Any worldwide city or airport">
+      </div>
+    </div>
+
+
+</br>
+</br>
+
+
+<!--depart date-->
+<label for="depart on">Depart on</label></br>
+      <div class="form-group">
+          <div class='input-group date' id='datetimepicker5'>
+
+              <input type='text' class="form-control" placeholder="pick a date"/>
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+          </div>
+      </div>
+
+  <script type="text/javascript">
+      $(function () {
+          $('#datetimepicker5').datetimepicker({
+              defaultDate: "14/12/2016"
+              ]
+          });
+      });
+  </script>
+
+
+</br>
+</br>
+
+
+<!--dropdown boxes to select no. of adults, children, infants-->
+<!--no of adults-->
+<div class="col-sm-2">
+<div class="dropdown">
+  <label for="Adult">Adult</label></br>
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">1
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+    </ul>
+  </div>
+</div>
+<!--no of children-->
+<div class="col-sm-2">
+  <div class="dropdown">
+    <label for="Children">Children</label></br>
+      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">1
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+      </ul>
+    </div>
+  </div>
+
+<!--no of infants-->
+  <div class="col-sm-2">
+    <div class="dropdown">
+      <label for="Infants">Infants</label></br>
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">1
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+        </ul>
+      </div>
+    </div>
+  </form>
+
+</br>
+</br>
+</br>
+</br>
+
+
+    <a href="#">
+             <p href="#" data-toggle="tooltip" title="Hoora!"> <span class="glyphicon glyphicon-triangle-right">More options:Class of travel, Airline preference
+        </span> </p>  </a>
+<div  id="search">
+     <button type="button" class="btn btn-danger" align="text-right">Search flights</button>
+   </br>
+ </br>
+   </div>
+</div>
+
+      <div class="col-sm-3">
+
+
+       </div>
+      </div>
+
+
+  </div>
+</div>
+
+<!--rewards container-->
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-5">
+  </br>
+</br>
+    <div class="text-right">
+    <a href="/home/codingmart/Documents/rewards_logo.png">
+      <img src="/home/codingmart/Documents/rewards_logo.png" style="width:60%; height:30%; "></a>
+    </div>
+  </div>
+
+<div class="col-sm-7">
+</br>
+
+<p1>  Keep booking to get free travel and stay.</p1><br>
+<p2>  No forms. No registrations. No more. Know more.</p2>
+</br>
+</br>
+</div>
+</div>
+
+</br>
+</div>
+
+
+<!--formality options-->
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-10">
+  <ul class="list-inline">
+      <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">About Us</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Careers</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">FAQs</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Support</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Blog</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Cleartrip for Business</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Mobile</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Gift Cards</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Collections</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Hotel Directory</a></li>
+    </ul>
+<ul class="list-inline">
+  <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!" style="color:#C0C0C0">2006-2016 Cleartrip Pvt.Ltd. </a></li>
+  <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!" style="color:#C0C0C0">Privacy</a></li>
+  <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!" style="color:#C0C0C0">Securtiy</a></li>
+  <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">Terms of use</a></li>
+</ul>
+</div>
+
+<div class="col-sm-2">
+
+<div class="text-right">
+    <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!" style="color:#C0C0C0">Connect</a>
+  <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!" style="color:#C0C0C0"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!" style="color:#C0C0C0"><i class="fa fa-twitter"></i></a>
+</div>
+  </div>
+</div>
+</div>
+
+<!--other options-->
+<div class="container-fluid">
+<div class="row">
+  <ul class="list-inline">
+      <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!" style="color:#C0C0C0">Other Tools:</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!" style="color:#C0C0C0">Cheap air tickets</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!" style="color:#C0C0C0">Flight tickets</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">Flight Status</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">India Hotels</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">IRCTC Railway reservation</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">IRCTC Railway PNR Status</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">Cheap domestic air tickets</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0"> Domestic flights</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">Domestic Airlines in India</a></li>
+
+    </ul>
+</div>
+</div>
+</body>
+</html>
