@@ -17,15 +17,18 @@
   {
     text-align: right;
   }
+  #ggg.row{
+    background-color: :#FAFAFA
+  }
 
   @media (min-width: 768px) {
     .sidebar-nav .navbar .navbar-collapse {
       padding: 0;
-      max-height: none;
+
 
     }
     .navbar-collapse{
-      height:500px;
+        height:500px;
     }
     .sidebar-nav .navbar ul {
       float: none;
@@ -36,14 +39,19 @@
       display: block;
       border-right:1px solid 	#DCDCDC;
       border-bottom:1px solid 	#DCDCDC;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      padding-left: 15px;
+      line-height: 24px;
+
     }
     .sidebar-nav .navbar li a {
       padding-top: 12px;
       padding-bottom: 12px;
     }
-    .glyphicon glyphicon-menu-right {
-      padding-right: 12px;
-    }
+
+
 
 }
 
@@ -53,6 +61,7 @@
     border-left:1px solid 	#DCDCDC;
     margin-left: 10px;
     background-color: #fff;
+    border-right: 1px solid #fff;
 
 }
 
@@ -92,6 +101,38 @@ p2{
   background-color:#FAFAFA;
 }
 
+.sss li
+{
+  margin: 0;
+padding-right: 2px;
+padding-top: 6px;
+padding-bottom:0px;
+margin-top: 2px;
+border: 0;
+font-weight: normal;
+font-style: normal;
+font-size: 12.3px;
+font-family: Helvetica,Arial,sans-serif;
+}
+.sss{
+  margin-left:14px;
+}
+
+.sssh li{
+  display: inline-block;
+  margin: 0;
+padding-right: 2px;
+padding-top: 1px;
+margin-top: 0;
+border: 0;
+font-weight: normal;
+font-style: normal;
+font-size: 12.3px;
+font-family: Helvetica,Arial,sans-serif;
+}
+.sssh{
+  margin-left:14px;
+}
 
   </style>
 </head>
@@ -107,14 +148,14 @@ p2{
       <div class="navbar-header">
       <div class="img-rounded">
         <a href="/home/codingmart/Documents/logo_1.png">
-          <img src="/home/codingmart/Documents/logo_1.png" style="width:50%; height:20%;"></a>
+          <img style="margin-left:5px;margin-top:8px" src="/home/codingmart/Documents/logo_1.png" width="149"; height="32"></a>
       </div>
       </div>
     </div>
   <!--text-->
   <div class="col-sm-5">
 <div class="collapse navbar-collapse" id="mainNav"><a href="#" data-toggle="tooltip" title="Hooray!">
-  Tell us what you think </a> of cleartrip experience
+<p class="text-center" style="padding-top:12px;">  Tell us what you think </a> of cleartrip experience<p>
 </div>
 </div>
 <!--currency, your trips dropdown-->
@@ -141,7 +182,7 @@ p2{
 
     <div class="row">
       <!--list of options u can select vertical navigation-->
-      <div class="col-sm-3 offset-0">
+      <div class="col-sm-3" style="background-color:#FAFAFA">
         <div class="sidebar-nav">
     <div class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
@@ -154,14 +195,35 @@ p2{
         <span class="visible-xs navbar-brand">Sidebar menu</span>
       </div>
       <div class="navbar-collapse collapse sidebar-navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="act"><a href="#">Flights<span class="glyphicon glyphicon-menu-right "></span></a></li>
-          <li><a class="ht" href="#">Hotels<span class="glyphicon glyphicon-menu-right "></span></a></li>
-          <li><a class="ll" href="#">Local<span class="glyphicon glyphicon-menu-right "></span></a></li>
-          <li><a class="fh"href="#">Flight+Hotel<span class="glyphicon glyphicon-menu-right "></span></a></li>
-          <li><a class="tr" href="#">Trains<span class="glyphicon glyphicon-menu-right "></span></a></li>
-          <li><a class="mv" href=""href="#">Mobile<span class="glyphicon glyphicon-menu-right "></span></a></li>
-          <li><a class="mt" href="#">Manage trips<span class="glyphicon glyphicon-menu-right "></span></a></li>
+        <ul class="nav navbar-nav" >
+          <li class="act">
+            <pr href="/home/codingmart/Documents/png/airplane-flight.png">
+              <img style="float:left;margin-top:13px;margin-right:14px;" src="/home/codingmart/Documents/png/airplane-flight.png"  width="22" height="22"></pr>
+              <a href="#">Flights<span class="glyphicon glyphicon-menu-right" style="padding-left:147px;"></span></a></li>
+          <li>
+            <pr href="/home/codingmart/Documents/png/hotel.png">
+              <img style="float:left;padding-left:7px;margin-top:10px;margin-right:14px;" src="/home/codingmart/Documents/png/hotel.png" width="34" height="30"></pr>
+              <a class="ht" href="#">Hotels<span class="glyphicon glyphicon-menu-right" style="padding-left:148px;"></span></a></li>
+          <li>
+            <pr href="/home/codingmart/Documents/png/local.png">
+              <img style="float:left;padding-left:7px;margin-top:12px;margin-right:18px;" src="/home/codingmart/Documents/png/local.png" width="30" height="25"></pr>
+              <a class="ll" href="#">Local<span class="glyphicon glyphicon-menu-right" style="padding-left:156px;"></span></a></li>
+          <li>
+            <pr href="/home/codingmart/Documents/png/f+h.png">
+              <img style="float:left;padding-left:7px;margin-top:10px;margin-right:15px;" src="/home/codingmart/Documents/png/f+h.png" width="34" height="27"></pr>
+              <a class="fh"href="#">Flight + Hotel<span class="glyphicon glyphicon-menu-right" style="padding-left:90px;"></span></a></li>
+          <li>
+            <pr href="/home/codingmart/Documents/png/trains.png">
+            <img style="float:left;padding-left:7px;margin-top:13px;margin-right:14px;" src="/home/codingmart/Documents/png/trains.png" width="36" height="25"></pr>
+            <a class="tr" href="#">Trains<span class="glyphicon glyphicon-menu-right" style="padding-left:145px;"></span></a></li>
+          <li>
+            <pr href="/home/codingmart/Documents/png/mobile.png">
+              <img style="float:left;padding-left:7px;margin-top:12px;margin-right:20px;" src="/home/codingmart/Documents/png/mobile.png" width="30" height="23"></pr>
+              <a class="mv" href=""href="#">Mobile<span class="glyphicon glyphicon-menu-right" style="padding-left:143px;"></span></a></li>
+          <li>
+            <pr href="/home/codingmart/Documents/png/manage.png">
+              <img style="float:left;left;padding-left:7px;margin-top:13px;margin-right:19px;" src="/home/codingmart/Documents/png/manage.png" width="30" height="23"></pr>
+              <a class="mt" href="#">Manage trips<span class="glyphicon glyphicon-menu-right" style="padding-left:94px;" ></span></a></li>
 
         </ul>
       </div>
@@ -328,14 +390,16 @@ p2{
     <a href="/home/codingmart/Documents/rewards_logo.png">
       <img src="/home/codingmart/Documents/rewards_logo.png" style="width:60%; height:30%; "></a>
     </div>
+  </br>
+</br>
   </div>
 
 <div class="col-sm-7">
 </br>
-
+</br>
+</br>
 <p1>  Keep booking to get free travel and stay.</p1><br>
 <p2>  No forms. No registrations. No more. Know more.</p2>
-</br>
 </br>
 </div>
 </div>
@@ -382,19 +446,31 @@ p2{
 <!--other options-->
 <div class="container-fluid">
 <div class="row">
+  <div class="sss">
   <ul class="list-inline">
-      <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!" style="color:#C0C0C0">Other Tools:</a></li>
-      <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!" style="color:#C0C0C0">Cheap air tickets</a></li>
-      <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!" style="color:#C0C0C0">Flight tickets</a></li>
-      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">Flight Status</a></li>
-      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">India Hotels</a></li>
-      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">IRCTC Railway reservation</a></li>
-      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">IRCTC Railway PNR Status</a></li>
-      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">Cheap domestic air tickets</a></li>
-      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0"> Domestic flights</a></li>
-      <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!" style="color:#C0C0C0">Domestic Airlines in India</a></li>
-
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0"><b>Other Tools:</b></a></li>
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0">Cheap air tickets</a></li>
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0">Flight tickets</a></li>
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0">Flight Status</a></li>
+      <li><a href="#" data-toggle="tooltip" title="Hooray!" style="color:#C0C0C0">India Hotels</a></li>
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0">IRCTC Railway reservation</a></li>
+      <li><a href="#" data-toggle="tooltip" title="Hooray!" style="color:#C0C0C0">IRCTC Railway PNR Status</a></li>
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0">Cheap domestic air tickets</a></li>
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0"> Domestic flights</a></li>
+      <li><a href="#" data-toggle="tooltip" title="Hooray!" style="color:#C0C0C0">Domestic Airlines in India</a></li>
     </ul>
+  </div>
+    <div class="sssh">
+    <ul class="list-inline">
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0">International air tickets</a></li>
+      <li><a href="#" data-toggle="tooltip" title="Hooray!" style="color:#C0C0C0">International FLights</a></li>
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0">International Airlines</a></li>
+      <li><a href="#" data-toggle="tooltip"  title="Hooray!" style="color:#C0C0C0">Travel guide</a></li>
+      <li><a href="#" data-toggle="tooltip" title="Hooray!" style="color:#C0C0C0">Holiday packages</a></li>
+    </ul>
+  </div>
+
+
 </div>
 </div>
 </body>
